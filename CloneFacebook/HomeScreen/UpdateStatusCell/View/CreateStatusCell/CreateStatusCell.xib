@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="createStatusCell" id="gTV-IL-0wX" customClass="CreateStatusCell" customModule="CloneFacebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="46"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArU-d3-wgz">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="46"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQi-xD-QFn" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="46"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe.asia.australia.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kCT-he-aDk">
+                                        <rect key="frame" x="5" y="14.999999999999998" width="18" height="16.666666666666664"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kCT-he-aDk" secondAttribute="height" multiplier="1:1" id="m4k-Sd-hQr"/>
+                                            <constraint firstAttribute="height" constant="18" id="t0W-U8-D6f"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-ExpandArrow" translatesAutoresizingMaskIntoConstraints="NO" id="RUT-cg-rKN">
+                                        <rect key="frame" x="104" y="14" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="KNt-FC-vi3"/>
+                                            <constraint firstAttribute="width" secondItem="RUT-cg-rKN" secondAttribute="height" multiplier="1:1" id="UQE-w2-Lpq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAd-g7-HiO">
+                                        <rect key="frame" x="25" y="5" width="77" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="UAd-g7-HiO" firstAttribute="centerY" secondItem="cQi-xD-QFn" secondAttribute="centerY" id="1XT-Ry-DRM"/>
+                                    <constraint firstItem="kCT-he-aDk" firstAttribute="leading" secondItem="cQi-xD-QFn" secondAttribute="leading" constant="5" id="2DG-fn-rWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="RUT-cg-rKN" secondAttribute="trailing" constant="5" id="6eh-7M-Vhg"/>
+                                    <constraint firstItem="UAd-g7-HiO" firstAttribute="leading" secondItem="kCT-he-aDk" secondAttribute="trailing" constant="2" id="IJV-La-sCZ"/>
+                                    <constraint firstItem="RUT-cg-rKN" firstAttribute="centerY" secondItem="cQi-xD-QFn" secondAttribute="centerY" id="Li5-fi-eGY"/>
+                                    <constraint firstItem="RUT-cg-rKN" firstAttribute="leading" secondItem="UAd-g7-HiO" secondAttribute="trailing" constant="2" id="aQX-jh-7LI"/>
+                                    <constraint firstItem="kCT-he-aDk" firstAttribute="centerY" secondItem="cQi-xD-QFn" secondAttribute="centerY" id="eZb-EC-P6H"/>
+                                    <constraint firstItem="UAd-g7-HiO" firstAttribute="top" secondItem="cQi-xD-QFn" secondAttribute="top" constant="5" id="ssf-6o-eh8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cQi-xD-QFn" secondAttribute="trailing" id="F5E-gI-2Ly"/>
+                            <constraint firstAttribute="bottom" secondItem="cQi-xD-QFn" secondAttribute="bottom" id="Tl9-Ud-QOb"/>
+                            <constraint firstItem="cQi-xD-QFn" firstAttribute="top" secondItem="ArU-d3-wgz" secondAttribute="top" id="VrS-Pr-WfF"/>
+                            <constraint firstItem="cQi-xD-QFn" firstAttribute="leading" secondItem="ArU-d3-wgz" secondAttribute="leading" id="YHg-H3-tWa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ArU-d3-wgz" secondAttribute="bottom" id="0s7-id-kpW"/>
+                <constraint firstAttribute="trailing" secondItem="ArU-d3-wgz" secondAttribute="trailing" id="DVe-67-pqR"/>
+                <constraint firstItem="ArU-d3-wgz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Pvz-SH-UUM"/>
+                <constraint firstItem="ArU-d3-wgz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b6P-SU-Y5K"/>
+            </constraints>
+            <size key="customSize" width="397" height="46"/>
+            <connections>
+                <outlet property="imgShareLevel" destination="kCT-he-aDk" id="euj-Et-Agg"/>
+                <outlet property="lblContentLabel" destination="UAd-g7-HiO" id="dck-a6-Dda"/>
+                <outlet property="mainView" destination="cQi-xD-QFn" id="oz4-79-IlQ"/>
+            </connections>
+            <point key="canvasLocation" x="328.46153846153845" y="-21.327014218009477"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-ExpandArrow" width="64" height="64"/>
+        <image name="globe.asia.australia.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

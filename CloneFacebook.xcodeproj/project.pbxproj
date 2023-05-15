@@ -7,15 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E169F3E2A07867D009B758D /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F3D2A07867D009B758D /* LoginScreen.swift */; };
+		1E169F412A0786CC009B758D /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F402A0786CC009B758D /* SignUp.swift */; };
+		1E169F452A07966E009B758D /* PostAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F442A07966E009B758D /* PostAudience.swift */; };
+		1E169F4D2A07E5E1009B758D /* PostAudienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F4B2A07E5E1009B758D /* PostAudienceCell.swift */; };
+		1E169F4E2A07E5E1009B758D /* PostAudienceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E169F4C2A07E5E1009B758D /* PostAudienceCell.xib */; };
+		1E169F502A0D2F5B009B758D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E169F4F2A0D2F5B009B758D /* Home.storyboard */; };
+		1E169F532A0D34A8009B758D /* CreatePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E169F512A0D337E009B758D /* CreatePost.storyboard */; };
+		1E8DC3F22A00330E00479BB9 /* CreatePostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3F12A00330E00479BB9 /* CreatePostItem.swift */; };
+		1E8DC3F42A00D19500479BB9 /* UpdateShareLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3F32A00D19500479BB9 /* UpdateShareLevel.swift */; };
+		1E8DC3F72A00D41800479BB9 /* StringFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3F62A00D41800479BB9 /* StringFile.swift */; };
+		1E8DC3FF2A01203A00479BB9 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3FD2A01203A00479BB9 /* StoryCell.swift */; };
+		1E8DC4002A01203A00479BB9 /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DC3FE2A01203A00479BB9 /* StoryCell.xib */; };
+		1E8DC4052A01215700479BB9 /* DetailStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC4032A01215700479BB9 /* DetailStoryCell.swift */; };
+		1E8DC4062A01215700479BB9 /* DetailStoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DC4042A01215700479BB9 /* DetailStoryCell.xib */; };
+		1E8DC40E2A014E3D00479BB9 /* AddStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC40C2A014E3D00479BB9 /* AddStory.swift */; };
+		1E8DC40F2A014E3D00479BB9 /* AddStory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DC40D2A014E3D00479BB9 /* AddStory.xib */; };
+		1E8DC4132A01580B00479BB9 /* ContentCellNoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC4112A01580B00479BB9 /* ContentCellNoImage.swift */; };
+		1E8DC4142A01580B00479BB9 /* ContentCellNoImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DC4122A01580B00479BB9 /* ContentCellNoImage.xib */; };
+		1E8DC4182A016A7C00479BB9 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC4162A016A7C00479BB9 /* ButtonCell.swift */; };
+		1E8DC4192A016A7C00479BB9 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DC4172A016A7C00479BB9 /* ButtonCell.xib */; };
+		1E8DC41C2A040CBB00479BB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC41B2A040CBB00479BB9 /* User.swift */; };
+		1E8DC41E2A040D9A00479BB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DC41D2A040D9A00479BB9 /* GoogleService-Info.plist */; };
+		1E8DC4202A040F2200479BB9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC41F2A040F2200479BB9 /* Post.swift */; };
+		1E8DC4222A040F8400479BB9 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC4212A040F8400479BB9 /* Info.swift */; };
+		1E8DC4242A040F9800479BB9 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC4232A040F9800479BB9 /* Friend.swift */; };
 		1EB79CA429FEB7450084B881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CA329FEB7450084B881 /* AppDelegate.swift */; };
 		1EB79CA629FEB7450084B881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CA529FEB7450084B881 /* SceneDelegate.swift */; };
 		1EB79CA829FEB7450084B881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CA729FEB7450084B881 /* ViewController.swift */; };
 		1EB79CAB29FEB7450084B881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB79CA929FEB7450084B881 /* Main.storyboard */; };
 		1EB79CAD29FEB7460084B881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB79CAC29FEB7460084B881 /* Assets.xcassets */; };
 		1EB79CB029FEB7460084B881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB79CAE29FEB7460084B881 /* LaunchScreen.storyboard */; };
+		1EB79CBC29FEBD7D0084B881 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB79CBB29FEBD7D0084B881 /* HomeView.swift */; };
+		1ECC5C2F29FEC4A900002B10 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECC5C2E29FEC4A900002B10 /* Icon.xcassets */; };
+		1ECC5C3329FED13900002B10 /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5C3129FED13900002B10 /* StatusCell.swift */; };
+		1ECC5C3429FED13900002B10 /* StatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ECC5C3229FED13900002B10 /* StatusCell.xib */; };
+		1ECC5C3629FED9E500002B10 /* CreatePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5C3529FED9E500002B10 /* CreatePost.swift */; };
+		1ECC5C3A29FEEEB200002B10 /* CreateStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5C3829FEEEB200002B10 /* CreateStatusCell.swift */; };
+		1ECC5C3B29FEEEB200002B10 /* CreateStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ECC5C3929FEEEB200002B10 /* CreateStatusCell.xib */; };
+		BD6FD70205BCD3F018A62E6B /* Pods_CloneFacebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295662B60210C569E6A908A9 /* Pods_CloneFacebook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A32AA7C3FC999BDECAEEC7F /* Pods-CloneFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloneFacebook.debug.xcconfig"; path = "Target Support Files/Pods-CloneFacebook/Pods-CloneFacebook.debug.xcconfig"; sourceTree = "<group>"; };
+		1E169F3D2A07867D009B758D /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		1E169F402A0786CC009B758D /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		1E169F442A07966E009B758D /* PostAudience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAudience.swift; sourceTree = "<group>"; };
+		1E169F4B2A07E5E1009B758D /* PostAudienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAudienceCell.swift; sourceTree = "<group>"; };
+		1E169F4C2A07E5E1009B758D /* PostAudienceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostAudienceCell.xib; sourceTree = "<group>"; };
+		1E169F4F2A0D2F5B009B758D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1E169F512A0D337E009B758D /* CreatePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CreatePost.storyboard; path = /Users/tungle/Documents/MyProject/CloneFacebook/CloneFacebook/CloneFacebook/CreatePost.storyboard; sourceTree = "<absolute>"; };
+		1E8DC3F12A00330E00479BB9 /* CreatePostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostItem.swift; sourceTree = "<group>"; };
+		1E8DC3F32A00D19500479BB9 /* UpdateShareLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShareLevel.swift; sourceTree = "<group>"; };
+		1E8DC3F62A00D41800479BB9 /* StringFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFile.swift; sourceTree = "<group>"; };
+		1E8DC3FD2A01203A00479BB9 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		1E8DC3FE2A01203A00479BB9 /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
+		1E8DC4032A01215700479BB9 /* DetailStoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryCell.swift; sourceTree = "<group>"; };
+		1E8DC4042A01215700479BB9 /* DetailStoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailStoryCell.xib; sourceTree = "<group>"; };
+		1E8DC40C2A014E3D00479BB9 /* AddStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStory.swift; sourceTree = "<group>"; };
+		1E8DC40D2A014E3D00479BB9 /* AddStory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddStory.xib; sourceTree = "<group>"; };
+		1E8DC4112A01580B00479BB9 /* ContentCellNoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCellNoImage.swift; sourceTree = "<group>"; };
+		1E8DC4122A01580B00479BB9 /* ContentCellNoImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCellNoImage.xib; sourceTree = "<group>"; };
+		1E8DC4162A016A7C00479BB9 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		1E8DC4172A016A7C00479BB9 /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		1E8DC41B2A040CBB00479BB9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1E8DC41D2A040D9A00479BB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E8DC41F2A040F2200479BB9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1E8DC4212A040F8400479BB9 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		1E8DC4232A040F9800479BB9 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		1EB79CA029FEB7450084B881 /* CloneFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB79CA329FEB7450084B881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EB79CA529FEB7450084B881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +83,15 @@
 		1EB79CAC29FEB7460084B881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB79CAF29FEB7460084B881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EB79CB129FEB7460084B881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB79CBB29FEBD7D0084B881 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1ECC5C2E29FEC4A900002B10 /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
+		1ECC5C3129FED13900002B10 /* StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
+		1ECC5C3229FED13900002B10 /* StatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusCell.xib; sourceTree = "<group>"; };
+		1ECC5C3529FED9E500002B10 /* CreatePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePost.swift; sourceTree = "<group>"; };
+		1ECC5C3829FEEEB200002B10 /* CreateStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStatusCell.swift; sourceTree = "<group>"; };
+		1ECC5C3929FEEEB200002B10 /* CreateStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateStatusCell.xib; sourceTree = "<group>"; };
+		295662B60210C569E6A908A9 /* Pods_CloneFacebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloneFacebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7DC9E09AE497215DD69680 /* Pods-CloneFacebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloneFacebook.release.xcconfig"; path = "Target Support Files/Pods-CloneFacebook/Pods-CloneFacebook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +99,165 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6FD70205BCD3F018A62E6B /* Pods_CloneFacebook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E169F3B2A07864F009B758D /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1E169F3C2A078658009B758D /* Controller */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		1E169F3C2A078658009B758D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E169F402A0786CC009B758D /* SignUp.swift */,
+				1E169F3D2A07867D009B758D /* LoginScreen.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E169F4A2A07E57B009B758D /* PostAudienceCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E169F4B2A07E5E1009B758D /* PostAudienceCell.swift */,
+				1E169F4C2A07E5E1009B758D /* PostAudienceCell.xib */,
+			);
+			path = PostAudienceCell;
+			sourceTree = "<group>";
+		};
+		1E169F522A0D338E009B758D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CA929FEB7450084B881 /* Main.storyboard */,
+				1E169F512A0D337E009B758D /* CreatePost.storyboard */,
+				1E169F4F2A0D2F5B009B758D /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1E8DC3F52A00D40B00479BB9 /* OtherFile */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC3F62A00D41800479BB9 /* StringFile.swift */,
+			);
+			path = OtherFile;
+			sourceTree = "<group>";
+		};
+		1E8DC3F82A011C9700479BB9 /* UpdateStatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CBA29FEBD6B0084B881 /* Controller */,
+				1EB79CB929FEBD650084B881 /* Model */,
+				1EB79CB829FEBD5F0084B881 /* View */,
+			);
+			path = UpdateStatusCell;
+			sourceTree = "<group>";
+		};
+		1E8DC3F92A011CAE00479BB9 /* StoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC3FC2A011CBF00479BB9 /* Controller */,
+				1E8DC3FB2A011CBA00479BB9 /* Model */,
+				1E8DC3FA2A011CB500479BB9 /* View */,
+			);
+			path = StoryCell;
+			sourceTree = "<group>";
+		};
+		1E8DC3FA2A011CB500479BB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC40B2A014DFD00479BB9 /* AddStory */,
+				1E8DC4022A01213200479BB9 /* DetailStory */,
+				1E8DC4012A01212200479BB9 /* StoryCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E8DC3FB2A011CBA00479BB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E8DC3FC2A011CBF00479BB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E8DC4012A01212200479BB9 /* StoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC3FD2A01203A00479BB9 /* StoryCell.swift */,
+				1E8DC3FE2A01203A00479BB9 /* StoryCell.xib */,
+			);
+			path = StoryCell;
+			sourceTree = "<group>";
+		};
+		1E8DC4022A01213200479BB9 /* DetailStory */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC4032A01215700479BB9 /* DetailStoryCell.swift */,
+				1E8DC4042A01215700479BB9 /* DetailStoryCell.xib */,
+			);
+			path = DetailStory;
+			sourceTree = "<group>";
+		};
+		1E8DC40B2A014DFD00479BB9 /* AddStory */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC40C2A014E3D00479BB9 /* AddStory.swift */,
+				1E8DC40D2A014E3D00479BB9 /* AddStory.xib */,
+			);
+			path = AddStory;
+			sourceTree = "<group>";
+		};
+		1E8DC4102A0157CB00479BB9 /* ContentCellNoImage */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC4152A016A2100479BB9 /* ButtonCell */,
+				1E8DC4112A01580B00479BB9 /* ContentCellNoImage.swift */,
+				1E8DC4122A01580B00479BB9 /* ContentCellNoImage.xib */,
+			);
+			path = ContentCellNoImage;
+			sourceTree = "<group>";
+		};
+		1E8DC4152A016A2100479BB9 /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC4162A016A7C00479BB9 /* ButtonCell.swift */,
+				1E8DC4172A016A7C00479BB9 /* ButtonCell.xib */,
+			);
+			path = ButtonCell;
+			sourceTree = "<group>";
+		};
+		1E8DC41A2A040CAC00479BB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC41B2A040CBB00479BB9 /* User.swift */,
+				1E8DC41F2A040F2200479BB9 /* Post.swift */,
+				1E8DC4212A040F8400479BB9 /* Info.swift */,
+				1E8DC4232A040F9800479BB9 /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1EB79C9729FEB7450084B881 = {
 			isa = PBXGroup;
 			children = (
 				1EB79CA229FEB7450084B881 /* CloneFacebook */,
 				1EB79CA129FEB7450084B881 /* Products */,
+				E4C888581CBC2B2D274B3A87 /* Pods */,
+				FDE5CCBEC88F1A7692989D03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +272,95 @@
 		1EB79CA229FEB7450084B881 /* CloneFacebook */ = {
 			isa = PBXGroup;
 			children = (
+				1E169F522A0D338E009B758D /* Storyboard */,
+				1E169F3B2A07864F009B758D /* LoginScreen */,
+				1E8DC41A2A040CAC00479BB9 /* Model */,
+				1E8DC3F52A00D40B00479BB9 /* OtherFile */,
+				1EB79CB729FEBD500084B881 /* HomeScreen */,
 				1EB79CA329FEB7450084B881 /* AppDelegate.swift */,
 				1EB79CA529FEB7450084B881 /* SceneDelegate.swift */,
 				1EB79CA729FEB7450084B881 /* ViewController.swift */,
-				1EB79CA929FEB7450084B881 /* Main.storyboard */,
 				1EB79CAC29FEB7460084B881 /* Assets.xcassets */,
 				1EB79CAE29FEB7460084B881 /* LaunchScreen.storyboard */,
 				1EB79CB129FEB7460084B881 /* Info.plist */,
+				1ECC5C2E29FEC4A900002B10 /* Icon.xcassets */,
+				1E8DC41D2A040D9A00479BB9 /* GoogleService-Info.plist */,
 			);
 			path = CloneFacebook;
+			sourceTree = "<group>";
+		};
+		1EB79CB729FEBD500084B881 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1EB79CBB29FEBD7D0084B881 /* HomeView.swift */,
+				1E8DC4102A0157CB00479BB9 /* ContentCellNoImage */,
+				1E8DC3F92A011CAE00479BB9 /* StoryCell */,
+				1E8DC3F82A011C9700479BB9 /* UpdateStatusCell */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		1EB79CB829FEBD5F0084B881 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E169F4A2A07E57B009B758D /* PostAudienceCell */,
+				1ECC5C3729FEEE3F00002B10 /* CreateStatusCell */,
+				1ECC5C3029FED11E00002B10 /* StatusCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EB79CB929FEBD650084B881 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E8DC3F12A00330E00479BB9 /* CreatePostItem.swift */,
+				1E169F442A07966E009B758D /* PostAudience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EB79CBA29FEBD6B0084B881 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ECC5C3529FED9E500002B10 /* CreatePost.swift */,
+				1E8DC3F32A00D19500479BB9 /* UpdateShareLevel.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ECC5C3029FED11E00002B10 /* StatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				1ECC5C3129FED13900002B10 /* StatusCell.swift */,
+				1ECC5C3229FED13900002B10 /* StatusCell.xib */,
+			);
+			path = StatusCell;
+			sourceTree = "<group>";
+		};
+		1ECC5C3729FEEE3F00002B10 /* CreateStatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				1ECC5C3829FEEEB200002B10 /* CreateStatusCell.swift */,
+				1ECC5C3929FEEEB200002B10 /* CreateStatusCell.xib */,
+			);
+			path = CreateStatusCell;
+			sourceTree = "<group>";
+		};
+		E4C888581CBC2B2D274B3A87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A32AA7C3FC999BDECAEEC7F /* Pods-CloneFacebook.debug.xcconfig */,
+				7D7DC9E09AE497215DD69680 /* Pods-CloneFacebook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDE5CCBEC88F1A7692989D03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				295662B60210C569E6A908A9 /* Pods_CloneFacebook.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +370,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EB79CB429FEB7460084B881 /* Build configuration list for PBXNativeTarget "CloneFacebook" */;
 			buildPhases = (
+				6BF3D367F91A7FB053BC5D91 /* [CP] Check Pods Manifest.lock */,
 				1EB79C9C29FEB7450084B881 /* Sources */,
 				1EB79C9D29FEB7450084B881 /* Frameworks */,
 				1EB79C9E29FEB7450084B881 /* Resources */,
+				5E8153F328CC3283F5E48CDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +423,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8DC4062A01215700479BB9 /* DetailStoryCell.xib in Resources */,
 				1EB79CB029FEB7460084B881 /* LaunchScreen.storyboard in Resources */,
+				1E8DC4142A01580B00479BB9 /* ContentCellNoImage.xib in Resources */,
+				1ECC5C3B29FEEEB200002B10 /* CreateStatusCell.xib in Resources */,
+				1E169F4E2A07E5E1009B758D /* PostAudienceCell.xib in Resources */,
+				1E169F502A0D2F5B009B758D /* Home.storyboard in Resources */,
+				1ECC5C3429FED13900002B10 /* StatusCell.xib in Resources */,
+				1E8DC4192A016A7C00479BB9 /* ButtonCell.xib in Resources */,
+				1E8DC4002A01203A00479BB9 /* StoryCell.xib in Resources */,
+				1E8DC41E2A040D9A00479BB9 /* GoogleService-Info.plist in Resources */,
+				1E169F532A0D34A8009B758D /* CreatePost.storyboard in Resources */,
 				1EB79CAD29FEB7460084B881 /* Assets.xcassets in Resources */,
+				1E8DC40F2A014E3D00479BB9 /* AddStory.xib in Resources */,
+				1ECC5C2F29FEC4A900002B10 /* Icon.xcassets in Resources */,
 				1EB79CAB29FEB7450084B881 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E8153F328CC3283F5E48CDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloneFacebook/Pods-CloneFacebook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloneFacebook/Pods-CloneFacebook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloneFacebook/Pods-CloneFacebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BF3D367F91A7FB053BC5D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloneFacebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1EB79C9C29FEB7450084B881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8DC40E2A014E3D00479BB9 /* AddStory.swift in Sources */,
+				1E8DC3F22A00330E00479BB9 /* CreatePostItem.swift in Sources */,
+				1ECC5C3A29FEEEB200002B10 /* CreateStatusCell.swift in Sources */,
+				1E8DC4222A040F8400479BB9 /* Info.swift in Sources */,
+				1E8DC3F42A00D19500479BB9 /* UpdateShareLevel.swift in Sources */,
+				1E8DC4202A040F2200479BB9 /* Post.swift in Sources */,
+				1E169F452A07966E009B758D /* PostAudience.swift in Sources */,
+				1E8DC41C2A040CBB00479BB9 /* User.swift in Sources */,
+				1E169F412A0786CC009B758D /* SignUp.swift in Sources */,
+				1ECC5C3329FED13900002B10 /* StatusCell.swift in Sources */,
+				1E8DC4052A01215700479BB9 /* DetailStoryCell.swift in Sources */,
+				1E169F4D2A07E5E1009B758D /* PostAudienceCell.swift in Sources */,
+				1E169F3E2A07867D009B758D /* LoginScreen.swift in Sources */,
 				1EB79CA829FEB7450084B881 /* ViewController.swift in Sources */,
+				1EB79CBC29FEBD7D0084B881 /* HomeView.swift in Sources */,
+				1E8DC4182A016A7C00479BB9 /* ButtonCell.swift in Sources */,
+				1E8DC3F72A00D41800479BB9 /* StringFile.swift in Sources */,
+				1E8DC4242A040F9800479BB9 /* Friend.swift in Sources */,
+				1ECC5C3629FED9E500002B10 /* CreatePost.swift in Sources */,
+				1E8DC4132A01580B00479BB9 /* ContentCellNoImage.swift in Sources */,
 				1EB79CA429FEB7450084B881 /* AppDelegate.swift in Sources */,
+				1E8DC3FF2A01203A00479BB9 /* StoryCell.swift in Sources */,
 				1EB79CA629FEB7450084B881 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +654,7 @@
 		};
 		1EB79CB529FEB7460084B881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A32AA7C3FC999BDECAEEC7F /* Pods-CloneFacebook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +682,7 @@
 		};
 		1EB79CB629FEB7460084B881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7DC9E09AE497215DD69680 /* Pods-CloneFacebook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addStory" id="gTV-IL-0wX" customClass="AddStory" customModule="CloneFacebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarUser2" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-cx-sjy">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zS2-cx-sjy" secondAttribute="height" multiplier="1:1.6" id="STE-pK-chB"/>
+                            <constraint firstAttribute="height" constant="200" id="idp-Fd-XCS"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grb-za-xo3">
+                        <rect key="frame" x="0.0" y="140" width="134" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ws-rZ-eyE">
+                                <rect key="frame" x="10" y="38" width="114" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconAdd" translatesAutoresizingMaskIntoConstraints="NO" id="NsV-7b-lkK">
+                                <rect key="frame" x="54.666666666666657" y="-10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="E5r-iV-w5p"/>
+                                    <constraint firstAttribute="width" secondItem="NsV-7b-lkK" secondAttribute="height" multiplier="1:1" id="IgJ-fX-CZh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="F2b-H0-ovZ"/>
+                            <constraint firstItem="NsV-7b-lkK" firstAttribute="top" secondItem="Grb-za-xo3" secondAttribute="top" constant="-10" id="HEs-YY-5qM"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ws-rZ-eyE" secondAttribute="trailing" constant="10" id="Ixb-c9-Jgw"/>
+                            <constraint firstItem="1Ws-rZ-eyE" firstAttribute="leading" secondItem="Grb-za-xo3" secondAttribute="leading" constant="10" id="ajB-ce-369"/>
+                            <constraint firstItem="NsV-7b-lkK" firstAttribute="centerX" secondItem="Grb-za-xo3" secondAttribute="centerX" id="bho-3C-bDU"/>
+                            <constraint firstAttribute="bottom" secondItem="1Ws-rZ-eyE" secondAttribute="bottom" constant="5" id="tbA-Sa-2qL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="zS2-cx-sjy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0jL-9h-vDb"/>
+                <constraint firstAttribute="trailing" secondItem="Grb-za-xo3" secondAttribute="trailing" id="T74-y2-0VB"/>
+                <constraint firstItem="Grb-za-xo3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="a2P-nG-92E"/>
+                <constraint firstItem="zS2-cx-sjy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d47-gc-1vK"/>
+                <constraint firstAttribute="bottom" secondItem="Grb-za-xo3" secondAttribute="bottom" id="yFT-AG-LIT"/>
+            </constraints>
+            <size key="customSize" width="134" height="200"/>
+            <connections>
+                <outlet property="imgAddbutton" destination="NsV-7b-lkK" id="vPX-aH-3lP"/>
+                <outlet property="imgUserAvatar" destination="zS2-cx-sjy" id="4zb-cs-s24"/>
+                <outlet property="viewBottomView" destination="Grb-za-xo3" id="6hC-0n-bWh"/>
+            </connections>
+            <point key="canvasLocation" x="101.53846153846153" y="41.943127962085306"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AvatarUser2" width="600" height="905"/>
+        <image name="IconAdd" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
