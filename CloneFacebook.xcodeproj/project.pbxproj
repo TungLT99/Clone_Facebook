@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046951862A2E1ED100D25092 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046951852A2E1ED100D25092 /* SignUpViewModel.swift */; };
+		046951892A2E203D00D25092 /* SignUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046951882A2E203D00D25092 /* SignUpUseCase.swift */; };
+		0469518B2A2E212B00D25092 /* SignUpUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469518A2A2E212B00D25092 /* SignUpUseCaseImp.swift */; };
+		046951912A2E24FA00D25092 /* SignUpResponsitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046951902A2E24FA00D25092 /* SignUpResponsitory.swift */; };
+		04F049422A1A65E300CC410D /* CreatePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F049412A1A65E300CC410D /* CreatePost.storyboard */; };
 		1E169F3E2A07867D009B758D /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F3D2A07867D009B758D /* LoginScreen.swift */; };
 		1E169F412A0786CC009B758D /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F402A0786CC009B758D /* SignUp.swift */; };
 		1E169F452A07966E009B758D /* PostAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F442A07966E009B758D /* PostAudience.swift */; };
 		1E169F4D2A07E5E1009B758D /* PostAudienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E169F4B2A07E5E1009B758D /* PostAudienceCell.swift */; };
 		1E169F4E2A07E5E1009B758D /* PostAudienceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E169F4C2A07E5E1009B758D /* PostAudienceCell.xib */; };
 		1E169F502A0D2F5B009B758D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E169F4F2A0D2F5B009B758D /* Home.storyboard */; };
-		1E169F532A0D34A8009B758D /* CreatePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E169F512A0D337E009B758D /* CreatePost.storyboard */; };
 		1E8DC3F22A00330E00479BB9 /* CreatePostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3F12A00330E00479BB9 /* CreatePostItem.swift */; };
 		1E8DC3F42A00D19500479BB9 /* UpdateShareLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3F32A00D19500479BB9 /* UpdateShareLevel.swift */; };
 		1E8DC3F72A00D41800479BB9 /* StringFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DC3F62A00D41800479BB9 /* StringFile.swift */; };
@@ -49,6 +53,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046951852A2E1ED100D25092 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		046951882A2E203D00D25092 /* SignUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCase.swift; sourceTree = "<group>"; };
+		0469518A2A2E212B00D25092 /* SignUpUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCaseImp.swift; sourceTree = "<group>"; };
+		046951902A2E24FA00D25092 /* SignUpResponsitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponsitory.swift; sourceTree = "<group>"; };
+		04F049412A1A65E300CC410D /* CreatePost.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreatePost.storyboard; path = CloneFacebook/CreatePost.storyboard; sourceTree = SOURCE_ROOT; };
 		0A32AA7C3FC999BDECAEEC7F /* Pods-CloneFacebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloneFacebook.debug.xcconfig"; path = "Target Support Files/Pods-CloneFacebook/Pods-CloneFacebook.debug.xcconfig"; sourceTree = "<group>"; };
 		1E169F3D2A07867D009B758D /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		1E169F402A0786CC009B758D /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -56,7 +65,6 @@
 		1E169F4B2A07E5E1009B758D /* PostAudienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAudienceCell.swift; sourceTree = "<group>"; };
 		1E169F4C2A07E5E1009B758D /* PostAudienceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostAudienceCell.xib; sourceTree = "<group>"; };
 		1E169F4F2A0D2F5B009B758D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		1E169F512A0D337E009B758D /* CreatePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CreatePost.storyboard; path = /Users/tungle/Documents/MyProject/CloneFacebook/CloneFacebook/CloneFacebook/CreatePost.storyboard; sourceTree = "<absolute>"; };
 		1E8DC3F12A00330E00479BB9 /* CreatePostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostItem.swift; sourceTree = "<group>"; };
 		1E8DC3F32A00D19500479BB9 /* UpdateShareLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShareLevel.swift; sourceTree = "<group>"; };
 		1E8DC3F62A00D41800479BB9 /* StringFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFile.swift; sourceTree = "<group>"; };
@@ -106,6 +114,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0462097A2A2B281E0061B657 /* Infastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0469518C2A2E246A00D25092 /* Network */,
+			);
+			path = Infastructure;
+			sourceTree = "<group>";
+		};
+		0462097B2A2B28310061B657 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				046951872A2E1FCC00D25092 /* SignUpUseCase */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		0469517F2A2E1CEE00D25092 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				046951842A2E1EC200D25092 /* SignUpViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		046951802A2E1CF800D25092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E169F402A0786CC009B758D /* SignUp.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046951842A2E1EC200D25092 /* SignUpViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				046951852A2E1ED100D25092 /* SignUpViewModel.swift */,
+			);
+			path = SignUpViewModel;
+			sourceTree = "<group>";
+		};
+		046951872A2E1FCC00D25092 /* SignUpUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				046951882A2E203D00D25092 /* SignUpUseCase.swift */,
+				0469518A2A2E212B00D25092 /* SignUpUseCaseImp.swift */,
+			);
+			path = SignUpUseCase;
+			sourceTree = "<group>";
+		};
+		0469518C2A2E246A00D25092 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0469518E2A2E247C00D25092 /* Reponsitory */,
+				0469518D2A2E247600D25092 /* Entities */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0469518D2A2E247600D25092 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0469518E2A2E247C00D25092 /* Reponsitory */ = {
+			isa = PBXGroup;
+			children = (
+				0469518F2A2E24E500D25092 /* SignUpResponsitory */,
+			);
+			path = Reponsitory;
+			sourceTree = "<group>";
+		};
+		0469518F2A2E24E500D25092 /* SignUpResponsitory */ = {
+			isa = PBXGroup;
+			children = (
+				046951902A2E24FA00D25092 /* SignUpResponsitory.swift */,
+			);
+			path = SignUpResponsitory;
+			sourceTree = "<group>";
+		};
+		046951922A2F644C00D25092 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1E169F3B2A07864F009B758D /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +213,6 @@
 		1E169F3C2A078658009B758D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1E169F402A0786CC009B758D /* SignUp.swift */,
 				1E169F3D2A07867D009B758D /* LoginScreen.swift */,
 			);
 			path = Controller;
@@ -136,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				1EB79CA929FEB7450084B881 /* Main.storyboard */,
-				1E169F512A0D337E009B758D /* CreatePost.storyboard */,
+				04F049412A1A65E300CC410D /* CreatePost.storyboard */,
 				1E169F4F2A0D2F5B009B758D /* Home.storyboard */,
 			);
 			path = Storyboard;
@@ -272,6 +367,11 @@
 		1EB79CA229FEB7450084B881 /* CloneFacebook */ = {
 			isa = PBXGroup;
 			children = (
+				046951922A2F644C00D25092 /* Extension */,
+				046951802A2E1CF800D25092 /* View */,
+				0469517F2A2E1CEE00D25092 /* ViewModel */,
+				0462097B2A2B28310061B657 /* UseCase */,
+				0462097A2A2B281E0061B657 /* Infastructure */,
 				1E169F522A0D338E009B758D /* Storyboard */,
 				1E169F3B2A07864F009B758D /* LoginScreen */,
 				1E8DC41A2A040CAC00479BB9 /* Model */,
@@ -432,8 +532,8 @@
 				1ECC5C3429FED13900002B10 /* StatusCell.xib in Resources */,
 				1E8DC4192A016A7C00479BB9 /* ButtonCell.xib in Resources */,
 				1E8DC4002A01203A00479BB9 /* StoryCell.xib in Resources */,
+				04F049422A1A65E300CC410D /* CreatePost.storyboard in Resources */,
 				1E8DC41E2A040D9A00479BB9 /* GoogleService-Info.plist in Resources */,
-				1E169F532A0D34A8009B758D /* CreatePost.storyboard in Resources */,
 				1EB79CAD29FEB7460084B881 /* Assets.xcassets in Resources */,
 				1E8DC40F2A014E3D00479BB9 /* AddStory.xib in Resources */,
 				1ECC5C2F29FEC4A900002B10 /* Icon.xcassets in Resources */,
@@ -490,9 +590,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0469518B2A2E212B00D25092 /* SignUpUseCaseImp.swift in Sources */,
+				046951912A2E24FA00D25092 /* SignUpResponsitory.swift in Sources */,
 				1E8DC40E2A014E3D00479BB9 /* AddStory.swift in Sources */,
 				1E8DC3F22A00330E00479BB9 /* CreatePostItem.swift in Sources */,
 				1ECC5C3A29FEEEB200002B10 /* CreateStatusCell.swift in Sources */,
+				046951892A2E203D00D25092 /* SignUpUseCase.swift in Sources */,
 				1E8DC4222A040F8400479BB9 /* Info.swift in Sources */,
 				1E8DC3F42A00D19500479BB9 /* UpdateShareLevel.swift in Sources */,
 				1E8DC4202A040F2200479BB9 /* Post.swift in Sources */,
@@ -500,6 +603,7 @@
 				1E8DC41C2A040CBB00479BB9 /* User.swift in Sources */,
 				1E169F412A0786CC009B758D /* SignUp.swift in Sources */,
 				1ECC5C3329FED13900002B10 /* StatusCell.swift in Sources */,
+				046951862A2E1ED100D25092 /* SignUpViewModel.swift in Sources */,
 				1E8DC4052A01215700479BB9 /* DetailStoryCell.swift in Sources */,
 				1E169F4D2A07E5E1009B758D /* PostAudienceCell.swift in Sources */,
 				1E169F3E2A07867D009B758D /* LoginScreen.swift in Sources */,

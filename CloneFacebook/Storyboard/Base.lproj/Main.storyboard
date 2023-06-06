@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ycc-BM-fkg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ycc-BM-fkg">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -510,6 +511,9 @@
                                         <rect key="frame" x="10" y="34" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="usernameChangeValueTextField:" destination="471-Bq-lRe" eventType="editingChanged" id="b6Y-Wk-3FX"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -536,6 +540,9 @@
                                         <rect key="frame" x="10" y="34" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="passwordChangeValueTextField:" destination="471-Bq-lRe" eventType="editingChanged" id="eU5-Qm-1bh"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -562,6 +569,9 @@
                                         <rect key="frame" x="10" y="34" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="retypePasswordChangeValueTextField:" destination="471-Bq-lRe" eventType="editingChanged" id="p7f-0C-RWE"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -579,6 +589,9 @@
                                 <rect key="frame" x="20" y="605" width="350" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                <connections>
+                                    <action selector="didTapSignUpButton:" destination="471-Bq-lRe" eventType="touchUpInside" id="TqT-Fk-RTJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account ? Sign in here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1R-0j-W70">
                                 <rect key="frame" x="0.0" y="789.66666666666663" width="390" height="20.333333333333371"/>
@@ -613,6 +626,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oJM-Mn-iD0"/>
+                    <connections>
+                        <outlet property="PasswordTextField" destination="tW2-kX-kKD" id="HTK-TB-YhU"/>
+                        <outlet property="UsernameTextField" destination="3WI-2n-D8g" id="eWi-OZ-S82"/>
+                        <outlet property="goToLoginScreenLabel" destination="b1R-0j-W70" id="hU3-Yv-wGz"/>
+                        <outlet property="retypePasswordTextField" destination="WLs-ks-UYy" id="t6I-Jj-LGy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5A-M0-svx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

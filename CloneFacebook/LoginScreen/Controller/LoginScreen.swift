@@ -53,7 +53,7 @@ class LoginScreen: UIViewController {
 
     }
     @objc func didTapGesture(sender: UITapGestureRecognizer) {
-        weak var vc = storyboard?.instantiateViewController(withIdentifier: "SignUpScreen") as! SignUp
+        weak var vc = storyboard?.instantiateViewController(withIdentifier: "SignUpScreen") as? SignUp
         if let strongVc = vc {
             navigationController?.pushViewController(strongVc, animated: true)
         }
