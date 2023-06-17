@@ -13,3 +13,9 @@ class StringConfig {
         static let instagram = "Instagram"
     }
 }
+class StringUserDefault {
+    static let userEmail = "userEmail"
+    static let userImageName = "userImageName"
+    static let userName = "userName"
+    static let defaultPostAudience = "defaultPostAudience"
+}

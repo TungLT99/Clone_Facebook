@@ -7,5 +7,5 @@
 
 import Foundation
 protocol SignUpUseCaseProtocol {
-    func signUp(username: String, password: String, completion: @escaping () -> Void, error: @escaping (Error) -> Void)
+    func signUp(username: String, password: String,name: String, completion: @escaping () -> Void, error: @escaping (Error) -> Void)
 }

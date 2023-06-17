@@ -11,8 +11,8 @@ class SignUpUseCaseImp: SignUpUseCaseProtocol {
     init(responsitory: SignUpResponsitory) {
         self.responsitory = responsitory
     }
-    func signUp(username: String, password: String, completion: @escaping () -> Void, error: @escaping (Error) -> Void) {
-        responsitory?.signUpUser(username: username, password: password, completion: completion, error: error)
+    func signUp(username: String, password: String,name: String, completion: @escaping () -> Void, error: @escaping (Error) -> Void) {
+        responsitory?.signUpUser(username: username, password: password,name: name, completion: completion, error: error)
     }
 
     

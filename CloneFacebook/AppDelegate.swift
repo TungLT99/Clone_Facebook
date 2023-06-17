@@ -11,12 +11,26 @@ import FirebaseAuth
 import FirebaseFirestore
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    func checkSessionLogin() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let window = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.flatMap { $0.windows }.first
 
+        if UserDefaults.standard.string(forKey: StringUserDefault.userEmail) != nil {
+            let tabBarViewController = storyBoard.instantiateViewController(withIdentifier: "MainScreen")
+            let nav = UINavigationController(rootViewController: tabBarViewController)
+            window?.rootViewController = nav
+        } else {
+            let loginViewController = storyBoard.instantiateViewController(withIdentifier: "LoginScreen")
+            let nav = UINavigationController(rootViewController: loginViewController)
+            window?.rootViewController = nav
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        checkSessionLogin()
         return true
     }
 
