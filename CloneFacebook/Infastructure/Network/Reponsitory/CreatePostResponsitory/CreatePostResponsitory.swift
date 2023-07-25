@@ -16,20 +16,21 @@ final class CreatePostResponsitoryImp : CreatePostResponsitoryProtocol {
     let db = Firestore.firestore()
     func uploadPost(post: PostResult,completion: @escaping () -> Void, errorResult: @escaping (Error) -> Void) {
         let postEntity = post.toEntity()
-            db.collection("Post").document().setData([
-                "contentPost" : postEntity.contentPost,
-                "audiencePost" : postEntity.audiencePost,
-                "timePost" : postEntity.timePost,
-                "userEmail" : postEntity.userEmail
-            ]) { err in
-                if err == nil {
-                    completion()
-                }
-                else {
-                    errorResult(err!)
-                }
+        db.collection("Post").document().setData([
+            "contentPost" : postEntity.contentPost,
+            "audiencePost" : postEntity.audiencePost,
+            "timePost" : postEntity.timePost,
+            "userEmail" : postEntity.userEmail
+        ]){ err in
+            if err == nil {
+                UserDefaults.standard.set(post.audiencePost, forKey: StringUserDefault.defaultPostAudience)
+                completion()
             }
+            else {
+                errorResult(err!)
+            }
+        }
     }
     
-    
+   
 }

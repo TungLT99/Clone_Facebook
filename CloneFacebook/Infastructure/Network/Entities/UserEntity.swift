@@ -7,9 +7,9 @@
 
 import Foundation
 struct UserEntity {
-    private var userNameLogin: String = ""
-    private var nameUser: String = "Default Name"
-    private var nameImage: String = "defaultImage"
+     var userNameLogin: String = ""
+     var nameUser: String = "Default Name"
+     var nameImage: String = "defaultImage"
 //    private var arrPost: [Post]?
 //    private var info: Info = Info()
 //    private var arrFriend: [Friend]?
@@ -30,5 +30,9 @@ struct UserEntity {
         self.nameUser = name
         self.userNameLogin = emailLogin
     }
+    func toResult() -> UserResult {
+        return UserResult(userEmail: userNameLogin,userName: nameUser,userNameImage: nameImage)
+    }
+    
     
 }

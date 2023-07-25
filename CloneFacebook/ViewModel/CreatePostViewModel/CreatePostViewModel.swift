@@ -13,11 +13,12 @@ class CreatePostViewModel {
     var post : PostModel?
     var postAudience: PostAudience?
     var createPostUseCase : CreatePostUseCaseProtocol
+    
     init() {
         let responsitory = CreatePostResponsitoryImp()
         createPostUseCase = CreatePostUseCaseImp(responsitory: responsitory)
     }
-    func uploadPost(postContent: String, postAudience: PostAudience, completion: @escaping () -> Void, error: @escaping (Error) -> Void) {
+    func uploadPost(postContent: String?, postAudience: PostAudience, completion: @escaping () -> Void, error: @escaping (Error) -> Void) {
         let time : String  = Date().toString()
         let postAudienceTitle: String?
         if let postAudienceCheck = self.postAudience?.strTitle {
@@ -26,9 +27,17 @@ class CreatePostViewModel {
         else {
             postAudienceTitle = UserDefaults.standard.string(forKey: StringUserDefault.defaultPostAudience)
         }
-        if let userEmail = UserDefaults.standard.string(forKey: StringUserDefault.userEmail), let postAudienceFinal = postAudienceTitle {
-            createPostUseCase.uploadPost(post: PostModel(content: postContent, user: userEmail, time: time, postAudience: postAudienceFinal), completion: completion, errorResult: error)
+        if let userEmail = UserDefaults.standard.string(forKey: StringUserDefault.userEmail), let postAudienceFinal = postAudienceTitle, let safePostContent = postContent {
+            if safePostContent != "" {
+                createPostUseCase.uploadPost(post: PostModel(content: safePostContent, user: userEmail, time: time, postAudience: postAudienceFinal, userModel: UserModel(), postAudienceImage: ""), completion: completion, errorResult: error)
+            }
         }
-       
+    }
+    func getPostAudience(arrData: [PostAudience]) {
+        for item in arrData {
+            if item.strTitle == UserDefaults.standard.string(forKey: StringUserDefault.defaultPostAudience) {
+                self.postAudience = item
+            }
+        }
     }
 }

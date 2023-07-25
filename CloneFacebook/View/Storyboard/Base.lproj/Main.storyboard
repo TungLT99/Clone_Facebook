@@ -35,23 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="M6v-tQ-qvA">
-                        <leftBarButtonItems>
-                            <barButtonItem id="Gnb-1R-vcA">
-                                <imageReference key="image" image="text.justify" catalog="system" renderingMode="original"/>
-                            </barButtonItem>
-                            <barButtonItem title="Item" image="Facebook-Logo" id="ibC-7Z-j1r"/>
-                        </leftBarButtonItems>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="ellipsis.message" catalog="system" id="ftG-pd-j6D">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                            <barButtonItem systemItem="search" id="nOm-RH-pyd">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                            <barButtonItem systemItem="add" id="rMO-ZI-xcy">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" id="Gnb-1R-vcA">
+                            <imageReference key="image" image="text.justify" catalog="system" renderingMode="original"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="homeTableView" destination="1Ug-UP-9K1" id="pSu-RI-aMD"/>
@@ -323,17 +309,32 @@
             </objects>
             <point key="canvasLocation" x="65" y="1769"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Fk6-oL-QFo">
             <objects>
-                <viewController id="dBF-Oh-Xwl" sceneMemberID="viewController">
+                <viewController id="dBF-Oh-Xwl" customClass="ProfileViewController" customModule="CloneFacebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pSR-N0-qSn">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aFY-wq-tj1">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rvZ-xP-gcx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aFY-wq-tj1" firstAttribute="top" secondItem="rvZ-xP-gcx" secondAttribute="top" id="RPD-fQ-zA8"/>
+                            <constraint firstItem="rvZ-xP-gcx" firstAttribute="bottom" secondItem="aFY-wq-tj1" secondAttribute="bottom" id="Zii-Bb-5y9"/>
+                            <constraint firstItem="rvZ-xP-gcx" firstAttribute="trailing" secondItem="aFY-wq-tj1" secondAttribute="trailing" id="l6k-rj-Pol"/>
+                            <constraint firstItem="aFY-wq-tj1" firstAttribute="leading" secondItem="rvZ-xP-gcx" secondAttribute="leading" id="sTw-N8-wa4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QjT-Wc-WHA"/>
+                    <connections>
+                        <outlet property="profileMainTableView" destination="aFY-wq-tj1" id="lVx-hZ-YIi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4R-hn-Rmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -355,7 +356,7 @@
             </objects>
             <point key="canvasLocation" x="2743" y="1786"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Menu-->
         <scene sceneID="YtM-ap-O9Z">
             <objects>
                 <viewController id="Kv8-OI-r8d" customClass="MenuViewController" customModule="CloneFacebook" customModuleProvider="target" sceneMemberID="viewController">
@@ -364,23 +365,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qZ-Ac-jtu">
-                                <rect key="frame" x="15" y="706.66666666666663" width="360" height="34.333333333333371"/>
+                                <rect key="frame" x="15" y="721.66666666666663" width="360" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log Out"/>
                                 <connections>
                                     <action selector="didTapLogOutButton:" destination="Kv8-OI-r8d" eventType="touchUpInside" id="wfw-3N-lVK"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YQk-Vq-Fji">
+                                <rect key="frame" x="15" y="91" width="360" height="630.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Yg-Ka-4gI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1qZ-Ac-jtu" firstAttribute="leading" secondItem="0Yg-Ka-4gI" secondAttribute="leading" constant="15" id="1qE-p6-wXo"/>
-                            <constraint firstItem="0Yg-Ka-4gI" firstAttribute="bottom" secondItem="1qZ-Ac-jtu" secondAttribute="bottom" constant="20" id="PsL-F5-dWL"/>
+                            <constraint firstItem="0Yg-Ka-4gI" firstAttribute="bottom" secondItem="1qZ-Ac-jtu" secondAttribute="bottom" constant="5" id="PsL-F5-dWL"/>
                             <constraint firstItem="0Yg-Ka-4gI" firstAttribute="trailing" secondItem="1qZ-Ac-jtu" secondAttribute="trailing" constant="15" id="WAg-Ec-IZ5"/>
+                            <constraint firstItem="YQk-Vq-Fji" firstAttribute="leading" secondItem="0Yg-Ka-4gI" secondAttribute="leading" constant="15" id="cY0-fB-bhu"/>
+                            <constraint firstItem="YQk-Vq-Fji" firstAttribute="top" secondItem="0Yg-Ka-4gI" secondAttribute="top" id="dBK-e9-mP1"/>
+                            <constraint firstItem="1qZ-Ac-jtu" firstAttribute="top" secondItem="YQk-Vq-Fji" secondAttribute="bottom" id="exP-YZ-IIs"/>
+                            <constraint firstItem="0Yg-Ka-4gI" firstAttribute="trailing" secondItem="YQk-Vq-Fji" secondAttribute="trailing" constant="15" id="pec-zH-XWp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VBy-dn-ZgF"/>
+                    <navigationItem key="navigationItem" title="Menu" id="VBy-dn-ZgF">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="search" id="bgC-ZJ-7Qk">
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="gearshape.fill" catalog="system" id="5M4-Vd-pJd">
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuTableView" destination="YQk-Vq-Fji" id="vcu-Ty-cbO"/>
+                        <outlet property="searchBarButton" destination="bgC-ZJ-7Qk" id="V5p-Uo-wWa"/>
+                        <outlet property="settingBarButton" destination="5M4-Vd-pJd" id="2CV-K5-fUj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMf-6k-fV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -424,11 +447,11 @@
             </objects>
             <point key="canvasLocation" x="65" y="959"/>
         </scene>
-        <!--Personal Page-->
+        <!--Profile-->
         <scene sceneID="oNE-7s-cwR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ah3-AY-QyK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Personal Page" image="person.circle" catalog="system" id="Nbo-1P-mkI"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="Nbo-1P-mkI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Mo-Ot-OlM">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -705,13 +728,15 @@
     </scenes>
     <resources>
         <image name="Facebook-Icon" width="480" height="480"/>
-        <image name="Facebook-Logo" width="3840" height="2160"/>
         <image name="airplayvideo" catalog="system" width="128" height="97"/>
         <image name="bell" catalog="system" width="125" height="128"/>
-        <image name="ellipsis.message" catalog="system" width="128" height="116"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="text.justify" catalog="system" width="128" height="99"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

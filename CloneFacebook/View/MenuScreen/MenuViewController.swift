@@ -8,6 +8,9 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    @IBOutlet weak var menuTableView: UITableView!
+    @IBOutlet weak var settingBarButton: UIBarButtonItem!
+    @IBOutlet weak var searchBarButton: UIBarButtonItem!
     let menuViewModel = MenuViewModel()
     @IBAction func didTapLogOutButton(_ sender: Any) {
         menuViewModel.didTapLogOutButton { [weak self] in
@@ -23,6 +26,5 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }

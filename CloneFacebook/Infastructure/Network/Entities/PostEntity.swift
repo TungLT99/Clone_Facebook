@@ -11,12 +11,13 @@ struct PostEntity {
     var userEmail: String
     var timePost: String
     var audiencePost: String
-    
+    var user: UserEntity
+    var postAudienceImage: String
     func toResult() -> PostResult {
         return PostResult(contentPost: self.contentPost,
                           userEmail: self.userEmail,
                           timePost: self.timePost,
-                          audiencePost: self.audiencePost)
+                          audiencePost: self.audiencePost, user: self.user.toResult(), postAudienceImage: self.postAudienceImage)
     }
 }
 
